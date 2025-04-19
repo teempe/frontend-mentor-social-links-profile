@@ -1,4 +1,15 @@
-:root {}
+:root {
+    --color-grey-900: #141414;
+    --color-grey-800: #1F1F1F;
+    --color-grey-700: #333333;
+    --color-green: #C4F82A;
+    --color-white: #FFF;
+
+    --ff-body: "Inter", sans-serif;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
 
 // breakpoints
 $bp-tablet: 48em; // 768px;
