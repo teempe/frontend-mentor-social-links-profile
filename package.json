@@ -1,0 +1,16 @@
+{
+  "name": "fm-01-social-links-profile",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Social links profile solution",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/style.scss css/style.css -w",
+    "compile:sass": "sass sass/style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "teempe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
