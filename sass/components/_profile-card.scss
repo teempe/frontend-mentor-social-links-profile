@@ -1,0 +1,49 @@
+@use '../base/typography';
+
+
+.profile-card {
+    width: 32.7rem;
+
+    background-color: var(--color-grey-800);
+    border-radius: 1.2rem;
+    padding: 2.4rem;
+
+    display: grid;
+    row-gap: 2.4rem;
+
+    &__header {
+        display: grid;
+        row-gap: 2.4rem;
+        justify-items: center;
+    }
+
+    &__user-avatar {
+        width: 8.8rem;
+        border-radius: 50%;
+    }
+
+    &__user-name-location {
+        display: grid;
+        row-gap: 0.4rem;
+    }
+
+    &__user-name {
+        @include typography.text-title();
+        color: var(--color-white);
+    }
+    
+    &__user-location {
+        @include typography.text-subtitle();
+        color: var(--color-green);
+    }
+    
+    &__user-description {
+        color: var(--color-white);
+    }
+    
+    &__social-links {
+        display: grid;
+        row-gap: 1.6rem;
+        justify-items: center;
+    }
+}

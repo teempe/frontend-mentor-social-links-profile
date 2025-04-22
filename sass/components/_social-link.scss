@@ -1,0 +1,24 @@
+@use '../base/typography';
+
+
+.social-link {
+    background-color: var(--color-grey-700);
+    width: 100%;
+    border-radius: 0.8rem;
+
+    display: grid;
+    place-content: center;
+    padding: 1.2rem;
+
+    @include typography.text-subtitle();
+    text-decoration: none;
+    color: var(--color-white);
+
+    transition: background-color 0.25s ease-out;
+
+    &:active,
+    &:hover {
+        background-color: var(--color-green);
+        color: var(--color-grey-700);
+    }
+}
