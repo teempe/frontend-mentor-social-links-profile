@@ -2,11 +2,11 @@
 
 
 .profile-card {
-    width: 32.7rem;
+    width: clamp(32.7rem, 50vw, 38.4rem);
 
     background-color: var(--color-grey-800);
     border-radius: 1.2rem;
-    padding: 2.4rem;
+    padding: clamp(2.4rem, 5vw, 4rem);
 
     display: grid;
     row-gap: 2.4rem;
