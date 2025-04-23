@@ -41,9 +41,5 @@
         color: var(--color-white);
     }
     
-    &__social-links {
-        display: grid;
-        row-gap: 1.6rem;
-        justify-items: center;
-    }
+    &__social-links {}
 }
