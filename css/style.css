@@ -1,0 +1,111 @@
+:root {
+  --color-grey-900: #141414;
+  --color-grey-800: #1F1F1F;
+  --color-grey-700: #333333;
+  --color-green: #C4F82A;
+  --color-white: #FFF;
+  --ff-body: "Inter", sans-serif;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.profile-card {
+  width: clamp(32.7rem, 50vw, 38.4rem);
+  background-color: var(--color-grey-800);
+  border-radius: 1.2rem;
+  padding: clamp(2.4rem, 5vw, 4rem);
+  display: grid;
+  row-gap: 2.4rem;
+}
+.profile-card__header {
+  display: grid;
+  row-gap: 2.4rem;
+  justify-items: center;
+}
+.profile-card__user-avatar {
+  width: 8.8rem;
+  border-radius: 50%;
+}
+.profile-card__user-name-location {
+  display: grid;
+  row-gap: 0.4rem;
+}
+.profile-card__user-name {
+  font-weight: var(--fw-semi-bold);
+  font-size: 2.4rem;
+  color: var(--color-white);
+}
+.profile-card__user-location {
+  font-weight: var(--fw-bold);
+  color: var(--color-green);
+}
+.profile-card__user-description {
+  color: var(--color-white);
+}
+.social-links {
+  display: grid;
+  row-gap: 1.6rem;
+  justify-items: stretch;
+}
+.social-links__item {
+  list-style-type: none;
+}
+.social-links__link {
+  background-color: var(--color-grey-700);
+  width: 100%;
+  border-radius: 0.8rem;
+  display: grid;
+  place-content: center;
+  padding: 1.2rem;
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--color-white);
+  transition: background-color 0.25s ease-out;
+}
+.social-links__link:active, .social-links__link:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-700);
+}
+
+/*# sourceMappingURL=style.css.map */
